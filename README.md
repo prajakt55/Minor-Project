@@ -41,7 +41,7 @@ if you have any feedback,please reach out to me at prajaktchatur3@gmail.com .
 [MIT](https://choosealicense.com/licenses/mit/)
 
 ## Acknowledgements:
-- [Mentor -Divya Gupta]()
+
 - [W3School](https://www.w3schools.com/)
 - [Traversy-Media](https://www.youtube.com/watch?v=jV8B24rSN5o&t=443s)
 - [Code with Harry](https://www.codewithharry.com/videos/web-development-in-hindi-1)
