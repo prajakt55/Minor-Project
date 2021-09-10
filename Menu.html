@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');  /*this font for website name the burger house*/
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: rgb(250, 248, 248);
+        }
+
+        .nav-logo-addrss-login{
+            width: 100%;
+            height: 100px;
+            background: white;
+            overflow:auto;
+            border-bottom: 1px solid rgba(127, 0, 0,0.2);
+        }
+
+        ul{
+            padding: 0;
+            margin: 0 0 0 150px;
+            list-style: none;
+        }
+        li{
+            float: left;
+
+        }
+        .logo img{
+            position: absolute;
+            margin-top: 8px;
+            margin-left: 100px;
+            width: 70px;
+            height: 70px;
+            filter: contrast(100);
+        }
+        .add{
+            color: white;
+            margin-left:40px ;
+            font-size: 17px;
+            margin-top: 23px;
+            font-family: 'Open Sans', sans-serif;
+            color: black;
+        }
+        .website-name{
+            margin-left:300px;
+            margin-top: 20px;
+            font-size: 25px;
+            letter-spacing: 1.5px;
+            margin-top: 20px;
+            font-family: 'Lato', sans-serif;
+        }
+            
+        .btn-signup{
+            width: 120px;
+            height: 40px;
+            margin-top: 20px;
+            margin-left: 350px;
+            font-size: 20px;
+            border-radius: 20px;
+            background-color: rgb(248, 246, 245);
+            border: 1px solid rgba(127, 0, 0,0.4);
+            
+        }
+        .btn-signup:hover{
+            background-color: rgb(255, 102, 0);
+            transition-duration: 0.5s;
+        }
+        .navbar{
+            width: 100%;
+            height: 45px;
+            background: white;
+            overflow:auto;
+            margin: 0;
+            margin-top: 15px;
+            border-bottom: 1px solid rgba(127, 0, 0,0.3);
+            
+        }
+        li > a {
+            list-style: none;
+            text-decoration: none;
+            font-size: 20px;
+            margin-left: 10px;
+
+            
+        }
+
+        .wrapper{
+            margin-left: 80px;
+            display: grid;
+            align-items: center;
+            grid-template-columns: 30% 30% 30%;
+            grid-column-gap: 1em;
+            grid-row-gap: 2em;
+        }
+        img{
+            margin-left: 60px;
+            width: 220px;
+            height: 200px;
+            align-items: center;
+        }
+        .wrapper p{
+            margin-left: 100px;
+            font-family: 'Lato', sans-serif;
+        }
+        .wrapper > div{
+            background: #eee;
+            padding: 1em;
+        }
+        .wrapper > div:nth-child(odd){
+            background: #ddd;
+        }
+
+        /* footer */
+        footer{
+            border-top:1px solid rgba(127, 0, 0,0.4);
+            background: rgb(252, 250, 250);
+            height: auto;
+            width: 100vw;
+            font-family: 'Lato', sans-serif;
+            padding-top: 40px;
+        }
+        .footer-content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        .footer-content h3{
+            font-size: 1.8rem;
+            font-weight: 400;
+            text-transform: capitalize;
+            line-height: 3rem;
+            color: black;
+        }
+        .footer-content p{
+            max-width: 500px;
+            margin: 10px auto;
+            line-height: 28px;
+            font-size: 14px;
+            color: rgb(10, 10, 10);
+        }
+
+        .socials{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0 3rem 0;
+            font-family: 'Lato', sans-serif;
+        }
+        .socials li{
+            margin: 0 10px;
+
+        }
+        .socials a{
+            text-decoration: none;
+            color: rgb(7, 7, 7);
+        }
+        .socials a i{
+            font-size: 1.1rem;
+            transition: color .4s ease;
+        }
+        .socials a:hover i{
+            color: rgb(221, 41, 17);
+        }
+         
+        .footer-bottom p{
+            background: #000;
+            width: 100vh;
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+        }
+
+        .footer-bottom p{
+            
+            font-size: 14px;
+            word-spacing: 2px;
+            text-transform: capitalize;
+        }
+        .copyright{
+            color: black;
+            text-align: center;
+        }
+
+        .footer-bottom span{
+            text-transform: uppercase;
+            opacity: .4;
+            font-weight: 200;
+        }
+        .follo{
+            font-family: 'Lato', sans-serif;
+        }
+
+        .Home{
+             margin-left: 130px;
+            
+
+         }   
+         .Menu{
+             margin-left: 70px;
+         }
+         .Offer{
+             margin-left: 70px;
+         }
+         
+         .Contact{
+             margin-left: 70px;
+         }
+         .Home:hover{
+             color: rgb(224, 60, 19);
+         }
+         .Menu:hover{
+            color: rgb(224, 60, 19);
+         }
+         .Offer:hover{
+            color: rgb(224, 60, 19);
+         }
+         .Blog:hover{
+            color: rgb(224, 60, 19);
+         }
+         .Contact:hover{
+             color: rgb(245, 69, 16);
+         }
+        
+    </style>
+</head>
+
+<body>
+    <div class="logo"><a href="#"><img src="location.png" alt=""></a></div>
+    <nav class="nav-logo-addrss-login">
+        <ul>
+            <li><h1 class="add">Sankeshwar Road<br>Gadhinglaj 416502</h1></li>
+            <li><h1 class="website-name">The Bur<span>&#x1F354</span>er Stack</h1></li>
+            <li><button class="btn-signup">Log in</button></li>
+        </ul>
+    </nav>
+    <nav>
+        <ul class="navbar">
+            <li><a class="Home" href="index.html">Home</a></li>
+            <li><a class="Menu" href="Menu.html">Menu</a></li>
+            <li><a class="Offer" href="Offer.html">Blogs</a></li>
+            <!-- <li><a class="Blog" href="Blog.html">Blog</a></li> -->
+            <li><a class="Contact" href="Contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+    <br><br>
+    <div class="wrapper">
+        <div>
+            <img src="https://pngimg.com/uploads/burger_sandwich/burger_sandwich_PNG4134.png" alt=""><p>Single Chiken Burger</p>
+        </div>
+        <div>
+            <img src="https://pngimg.com/uploads/burger_sandwich/burger_sandwich_PNG4156.png" alt=""><p>Small Burger</p>
+        </div>
+        <div>
+            <img src="http://pngimg.com/uploads/burger_sandwich/burger_sandwich_PNG4132.png" alt=""><p>Double Chiken Burger</p>
+        </div>
+        <div>
+            <img src="https://pngimg.com/uploads/burger_sandwich/burger_sandwich_PNG4128.png" alt=""><p>Chiken Burger</p>
+        </div>
+        <div>
+            <img src="https://pngimg.com/uploads/burger_sandwich/burger_sandwich_PNG4115.png" alt=""><p>Cheese Burger</p>
+        </div>
+        <div>
+            <img src="https://pngimg.com/uploads/burger_sandwich/burger_sandwich_PNG4130.png" alt=""><p>Extra Large Burger</p>
+        </div>
+        <div>
+            <img src="https://pngimg.com/uploads/burger_sandwich/burger_sandwich_PNG96741.png" alt=""><p>Hamburger small</p>
+        </div>
+        <div>
+            <img src="https://pngimg.com/uploads/burger_sandwich/burger_sandwich_PNG96765.png" alt=""><p>Veg Double burger</p>
+        </div>
+        <div>
+            <img src="https://pngimg.com/uploads/burger_sandwich/burger_sandwich_PNG4159.png" alt=""><p>Maxican Burger</p>
+        </div>
+        <div>
+            <img src="https://pngimg.com/uploads/burger_sandwich/burger_sandwich_PNG4159.png" alt=""><p>Maxican Burger</p>
+        </div>
+        <div>
+            <img src="https://pngimg.com/uploads/burger_sandwich/burger_sandwich_PNG4135.png" alt=""><p>Burger</p>
+        </div>
+        <div>
+            <img src="http://pngimg.com/uploads/burger_sandwich/small/burger_sandwich_PNG96774.png" alt=""><p>Extra Larger Burger</p>
+        </div>
+    </div>
+    <br><br><br><br>
+
+    <footer>
+        <div class="footer-content">
+            <h3>The Bur<span>&#x1F354</span>er Stack</h3>
+            <p>Our mission is to create a Burger Brand that makes the best quality food goods on site from scratch, and where both employees and customers would feel comfortable.we purchase our fresly grocery daily.</p>
+            <ul class="socials">
+                <p class="follo">Follow us on</p>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+
+            </ul>
+        </div>
+        <div class="footer-botton">
+            
+            <p class="copyright">copyright &copy;2020 The Burger Stack.designer by <span>prajakt</span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
